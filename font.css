@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoonGift.eot?or6at1');
+  src:  url('fonts/icomoonGift.eot?or6at1#iefix') format('embedded-opentype'),
+    url('fonts/icomoonGift.ttf?or6at1') format('truetype'),
+    url('fonts/icomoonGift.woff?or6at1') format('woff'),
+    url('fonts/icomoonGift.svg?or6at1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gift:before {
+  content: "\e906";
+}
+
+.gift{
+  position: fixed;
+  right: 50px;
+  top: 70%;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 10;
+  text-align: center;
+}
+.gift>.icon{
+  border-radius: 1rem;
+  background: #84465F;
+  color: #fff;
+  text-decoration: none;
+  padding: .7rem;
+  display: flex;
+  transition: all .5s;
+  display: inline;
+}
+.icon-gift{
+  border-radius: 1rem;
+}
+.gift>.icon:hover{
+  padding-right: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+.gift>.icon>p{
+  font-size: 15px;
+}
+
+/* ------------------- RESPONSIVE DESIGN ------------------- */
+
+@media screen and (max-width: 700px){
+  .gift{
+    right: 10px;
+    top: 80%;
+    font-size: 1.5rem;
+  }
+  .gift>.icon>p{
+    font-size: 10px;
+}
